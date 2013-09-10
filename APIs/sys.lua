@@ -44,8 +44,8 @@ end
 function loadAPI(...)
   for _,api in ipairs( {...} )
     if _G[api] ~= "table" then 
-      assert(fs.exists("TLogic/"..api), "Could not find "..api", 0)
-      assert(os.loadAPI("TLogic/"..api), "Could not load "..api", 0)
+      assert(fs.exists("TLogic/APIs"..api), "Could not find "..api", 0)
+      assert(os.loadAPI("TLogic/APIs"..api), "Could not load "..api", 0)
     end
   end
 end

@@ -11,7 +11,7 @@
 
 ]]
 
-if not sys then if not os.loadAPI("sys") then error("Could not load primary API (sys)", 0) end end
+if not sys then if not os.loadAPI("TLogic/APIs/sys") then error("Could not load primary API (sys)", 0) end end
 sys.loadAPI("Class")
 
 local base
